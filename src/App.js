@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Demo from './demo';
+import { Button } from 'antd';
+import Compostion from './components/Compostion';
+import HooksTest from './components/HooksTest';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    count: 0
+  };
+  componentDidMount() {
+    this.setState({ count: this.state.count + 1 });
+    setTimeout(() => {
+      this.setState({
+        count: ""
+      })
+    }, 2000);
+  }
+  render() {
+    return (
+      <div className="App">
+        <Button type="primary">按钮</Button>
+        <Compostion></Compostion>
+        <HooksTest></HooksTest>
+        <header className="App-header">
+          {this.state.count && <Demo prop={this.state.count} />}
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
