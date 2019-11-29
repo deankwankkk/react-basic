@@ -17,3 +17,15 @@
 - 具名接收，使用props进行传值
 - 针对于传入的children的操作，可以使用map对数组进行操作
 ## react hooks (版本>=16.8)
+- useState
+- useEffect
+- useReducer
+- useCallback
+- useMemo
+- use+名字 自定义
+### 组件跨层级通信 Context
+- React.CreateContext
+- Context.Provider
+- Class.contextType
+- Context.Consumer
+#### 基本用法
