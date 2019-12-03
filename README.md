@@ -18,11 +18,17 @@
 - 针对于传入的children的操作，可以使用map对数组进行操作
 ## react hooks (版本>=16.8)
 - useState
+    - ```const [count, setCount] = useState(0) 声明此变量之后，可以直接使用，改变参数直接调用setCount()```
+    - ```setCount(), 可以传入两种参数类型，一种为需要改变的变量，一种为函数，大部分情况下，使用setCount(count => count + 1)```
 - useEffect
+    - ```useEffect(fnc, []) 第一个为处理逻辑的函数，第二个参数为传入的状态值，如果传入的状态值发生变化，则会再次调用useEffect方法```
 - useReducer
 - useCallback
+    - ```useMemo的返回值为函数时，可以使用useCallback进行使用```
 - useMemo
+    - ```useMemo只能使用在函数式写法，class写法使用继承PureComponent，使用memo可以进行浅比较，如果不发生变化，不会进行更新操作```
 - use+名字 自定义
+    - ```useUndefined(){....}```
 ### 组件跨层级通信 Context
 - React.CreateContext
 - Context.Provider
