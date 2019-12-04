@@ -35,3 +35,15 @@
 - Class.contextType
 - Context.Consumer
 #### 基本用法
+## 仿ant-design-pro表单
+- **<h3><font color=red>思路</font></h3>**
+    + 
+## redux
+- ```官方解释：redux是JS应用的一种可预测的状态容器```
+- ```redux提出了单一数据源Store，用来存储状态数据，所有组件可以通过Action修改store，也可以从store中获取最新状态，使用redux可以完美解决组件之间通信问题```
+- **<h3><font color=#FF0000>注意事项：</font></h3>** 
+    1. 使用redux进行状态管理，每次进行action派发事件，修改数据状态，必须使用<font color=#008000>createStore的subscribe</font>进行重新渲染，否则页面直接展示不出最新数据
+    2. action只能做同步单向数据流
+    3. redux是单一数据源
+- [使用方法](./src/store.js)
+- [案例](./src/components/ReduxTest.jsx)

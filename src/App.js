@@ -5,6 +5,8 @@ import { Button } from 'antd';
 import Compostion from './components/Compostion';
 import HooksTest from './components/HooksTest';
 import ContextTest from './components/ContextTest';
+import ReduxTest from './components/ReduxTest';
+import KForm from './components/KForm';
 
 class App extends React.Component {
   state = {
@@ -25,6 +27,8 @@ class App extends React.Component {
         <Compostion></Compostion>
         <HooksTest></HooksTest>
         <ContextTest></ContextTest>
+        <ReduxTest></ReduxTest>
+        <KForm></KForm>
         <header className="App-header">
           {this.state.count && <Demo prop={this.state.count} />}
         </header>
