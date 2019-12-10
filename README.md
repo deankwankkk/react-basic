@@ -49,3 +49,15 @@
     3. redux是单一数据源
 - [使用方法](./src/store.js)
 - [案例](./src/components/ReduxTest.jsx)
+## react-redux
+- ```npm install react-redux --save```
+- ```使用Provider对组件进行包裹封装 <Provider>....</Provider> --- 底层也是使用context上下文进行封装```
+- ```在对应的组件中引入connect，向外抛出connect(state, dispatch)(<Comp>) --- 实际上是高阶组件的应用```
+- ```const mapStateToProps = state => ({num: state})
+     const mapDispatchToProps = {
+        add: () => ({type: 'add'}),
+        minus: () => ({type: 'minus'})
+     }
+     connect(mapStateToProps, mapDispatchToProps)(Comp)
+    ```
+## 异步 redux-thunk

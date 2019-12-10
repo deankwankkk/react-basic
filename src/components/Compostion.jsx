@@ -57,7 +57,7 @@ export default function () {
         // </Fetcher>
         <RadioGroup name="mvvm">
             <Radio value="vue">vue</Radio>
-            <Radio value="react" checked>react</Radio>
+            <Radio value="react">react</Radio>
             <Radio value="angular">angular</Radio>
         </RadioGroup>
     )
