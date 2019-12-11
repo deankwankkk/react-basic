@@ -61,3 +61,16 @@
      connect(mapStateToProps, mapDispatchToProps)(Comp)
     ```
 ## 异步 redux-thunk
+- 使用中间件，执行流程顺序是在dispatch之前，所以可以对action进行操作
+- redux-thunk 监测到接收到的action是函数，则会判断为不直接执行state数据的改变，而是先执行action中的函数
+## react-router 路由
+- ```npm i react-router-dom -S```
+- react-router是包容式的路由，如果有二三四级路由，内容显示则会追加,可以在最高层加入关键字exact
+- 路由即是组件
+- ```<Route path="/" exact component={Index}></Route>  路由进行配置```
+- ```<Link to="/">INDEX</Link> Link进行相应路由跳转```
+- ```
+    路由传参：path="/about/:user" 可以在对应的子组件中进行props接收
+    props解析：history---导航指令  location---当前url信息  match---获取参数信息
+    ```
+- ```switch 用于多个符合匹配规则的路由，404```

@@ -9,6 +9,7 @@ import ContextTest from './components/ContextTest';
 import ReduxTest from './components/ReduxTest';
 // import KForm from './components/KForm';
 import SelfTest from './components/SelfTest';
+import RouterTest from './components/RouterTest';
 import store from './store/index';
 
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
         <HooksTest></HooksTest>
         <ContextTest></ContextTest>
         <ReduxTest></ReduxTest>
+        <RouterTest></RouterTest>
         {/* <KForm></KForm> */}
         <Provider store={store}>
           <SelfTest></SelfTest>
@@ -38,6 +40,7 @@ class App extends React.Component {
         <header className="App-header">
           {this.state.count && <Demo prop={this.state.count} />}
         </header>
+        
       </div>
     );
   }
