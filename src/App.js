@@ -40,7 +40,6 @@ class App extends React.Component {
         <header className="App-header">
           {this.state.count && <Demo prop={this.state.count} />}
         </header>
-        
       </div>
     );
   }

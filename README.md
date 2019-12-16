@@ -74,3 +74,4 @@
     props解析：history---导航指令  location---当前url信息  match---获取参数信息
     ```
 - ```switch 用于多个符合匹配规则的路由，404```
+- ```redirect 跳转```
